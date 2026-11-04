@@ -13,35 +13,35 @@
 </head>
 <body>
 
-  <!-- ORANGES BAND (bewusst ohne Text) -->
+  <!-- ORANGES BAND -->
   <div class="topbar"></div>
 
   <!-- HEADER -->
   <header class="header">
     <div class="header__left">
-      <span class="mono" id="headerCount">REZEPTE 0</span>
+      <span class="mono" id="headerCount">Recipes 0</span>
     </div>
 
-          <!-- zwischen '> <' kann Text folgen, damit dieser oben erscheint -->
+          <!-- between '> <' text can be inserted so it shows on top -->
     <div class="header__center">
       <a href="#" class="logo"> <span class="logo__star"> </span></a>
     </div>
 
     <div class="header__right">
-      <button class="btn-random" id="randomBtn" type="button">Zufälliges Rezept</button>
+      <button class="btn-random" id="randomBtn" type="button">Random Recipe</button>
     </div>
   </header>
 
   <!-- HERO -->
-            <!-- vor und nach <span class="dotted"> kann Text folgen, damit dieser rechts oben erscheint -->
+            <!-- before and after <span class="dotted"> text can be inserted so it shows on top right side -->
   <section class="hero">
-    <h1 class="hero__title">Rezeptbuch</h1>
+    <h1 class="hero__title">Cookbook</h1>
     <p class="hero__text">
        <span class="dotted"></span>
     </p>
   </section>
 
-  <!-- INHALT -->
+  <!-- Content -->
   <main class="layout">
 
     <!-- SIDEBAR -->
@@ -49,27 +49,27 @@
       <nav class="filters" id="categoryList"><!-- via JS --></nav>
 
       <div class="search">
-        <label class="search__label mono" for="searchInput">Zutat suchen</label>
+        <label class="search__label mono" for="searchInput">Search ingredient</label>
         <input
           type="text"
           id="searchInput"
           class="search__input mono"
-          placeholder="z. B. Kichererbsen"
+          placeholder="e.g. Pumpkin"
           autocomplete="off">
-        <button type="button" class="search__clear mono" id="searchClear" hidden>Zurücksetzen</button>
+        <button type="button" class="search__clear mono" id="searchClear" hidden>Clear</button>
       </div>
     </aside>
 
     <!-- GRID -->
     <section class="grid-wrap">
       <div class="grid" id="recipeGrid"><!-- via JS --></div>
-      <p class="empty mono" id="emptyState" hidden>Keine Rezepte gefunden.</p>
+      <p class="empty mono" id="emptyState" hidden>No recipes found.</p>
     </section>
 
   </main>
 
   <footer class="footer mono">
-    <span>rezeptbuch *</span>
+    <span>cookbook *</span>
     <span id="footerCount"></span>
   </footer>
 
@@ -89,10 +89,10 @@
         <h2 class="modal__title" id="modalTitle"></h2>
         <p class="modal__meta mono" id="modalMeta"></p>
 
-        <h3 class="modal__h3 mono">Zutaten</h3>
+        <h3 class="modal__h3 mono">Ingredients</h3>
         <ul class="modal__ingredients mono" id="modalIngredients"></ul>
 
-        <h3 class="modal__h3 mono">Zubereitung</h3>
+        <h3 class="modal__h3 mono">Preparation</h3>
         <ol class="modal__steps" id="modalSteps"></ol>
       </div>
     </div>
