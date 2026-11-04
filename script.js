@@ -162,8 +162,8 @@ function renderGrid(){
   });
 
   emptyState.hidden = visibleRecipes.length > 0;
-  headerCount.textContent = `Rezepte ${visibleRecipes.length}`;
-  footerCount.textContent = `${RECIPES.length} Rezepte insgesamt`;
+  headerCount.textContent = `Recipes ${visibleRecipes.length}`;
+  footerCount.textContent = `${RECIPES.length} Total Recipes`;
 }
 
 function render(){
