@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rezeptbuch</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ORANGES BAND (bewusst ohne Text) -->
+  <div class="topbar"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__left">
+      <span class="mono" id="headerCount">REZEPTE 0</span>
+    </div>
+
+          <!-- zwischen '> <' kann Text folgen, damit dieser oben erscheint -->
+    <div class="header__center">
+      <a href="#" class="logo"> <span class="logo__star"> </span></a>
+    </div>
+
+    <div class="header__right">
+      <button class="btn-random" id="randomBtn" type="button">Zufälliges Rezept</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+            <!-- vor und nach <span class="dotted"> kann Text folgen, damit dieser rechts oben erscheint -->
+  <section class="hero">
+    <h1 class="hero__title">Rezeptbuch</h1>
+    <p class="hero__text">
+       <span class="dotted"></span>
+    </p>
+  </section>
+
+  <!-- INHALT -->
+  <main class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <nav class="filters" id="categoryList"><!-- via JS --></nav>
+
+      <div class="search">
+        <label class="search__label mono" for="searchInput">Zutat suchen</label>
+        <input
+          type="text"
+          id="searchInput"
+          class="search__input mono"
+          placeholder="z. B. Kichererbsen"
+          autocomplete="off">
+        <button type="button" class="search__clear mono" id="searchClear" hidden>Zurücksetzen</button>
+      </div>
+    </aside>
+
+    <!-- GRID -->
+    <section class="grid-wrap">
+      <div class="grid" id="recipeGrid"><!-- via JS --></div>
+      <p class="empty mono" id="emptyState" hidden>Keine Rezepte gefunden.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer mono">
+    <span>rezeptbuch *</span>
+    <span id="footerCount"></span>
+  </footer>
+
+  <!-- DETAIL-MODAL -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close mono" type="button" data-close aria-label="Schließen">Schließen ×</button>
+
+      <div class="modal__media">
+        <img id="modalImg" src="" alt="">
+      </div>
+
+      <div class="modal__body">
+        <span class="card__cat mono" id="modalCat"></span>
+        <h2 class="modal__title" id="modalTitle"></h2>
+        <p class="modal__meta mono" id="modalMeta"></p>
+
+        <h3 class="modal__h3 mono">Zutaten</h3>
+        <ul class="modal__ingredients mono" id="modalIngredients"></ul>
+
+        <h3 class="modal__h3 mono">Zubereitung</h3>
+        <ol class="modal__steps" id="modalSteps"></ol>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
