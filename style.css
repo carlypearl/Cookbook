@@ -158,7 +158,7 @@ body{
 
 .filter__count{ opacity: .6; }
 
-/* Suche */
+/* Search */
 .search{ display: flex; flex-direction: column; gap: 10px; }
 
 .search__label{ color: var(--grey); }
@@ -224,7 +224,7 @@ body{
 }
 .card:hover .card__media img{ transform: scale(1.04); }
 
-/* Placeholder, sas long as there is no picture available */
+/* Placeholder, as long as there is no picture available */
 .card__media.is-placeholder img{ display: none; }
 .card__media.is-placeholder::after{
   content: attr(data-placeholder);
