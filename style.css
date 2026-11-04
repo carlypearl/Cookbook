@@ -1,5 +1,5 @@
 /* ============================================================
-   REZEPTBUCH — style.css
+   Cookbook — style.css
    ============================================================ */
 
 :root{
@@ -37,7 +37,7 @@ body{
   text-transform: uppercase;
 }
 
-/* ---------- Oranges Band (leer) ---------- */
+/* ---------- Oranges Band (empty) ---------- */
 .topbar{
   background: var(--orange);
   height: 44px;
@@ -224,7 +224,7 @@ body{
 }
 .card:hover .card__media img{ transform: scale(1.04); }
 
-/* Platzhalter, solange noch kein Bild hinterlegt ist */
+/* Placeholder, sas long as there is no picture available */
 .card__media.is-placeholder img{ display: none; }
 .card__media.is-placeholder::after{
   content: attr(data-placeholder);
