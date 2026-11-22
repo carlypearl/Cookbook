@@ -53,13 +53,13 @@ const RECIPES = [
   {
     title: "Placeholder",
     category: "Entree",
-    badge: "Fish",
-    image: "images/ecample.jpeg",
+    badge: "Veggi",
+    image: "images/example.jpeg",
     time: "30 Min",
     portions: "2 Servings",
     ingredients: [
-      "Ingredient 1",
-      "Ingredient 2",
+      "Honey",
+      "Karrots",
       "Ingredient 3",
       "Ingredient 4",
       "Ingredien 5",
